@@ -1,0 +1,10 @@
+node_modules
+.idea
+.DS_STORE
+*.iml
+.vscode
+dist
+public
+.env
+.env.*
+node_modules

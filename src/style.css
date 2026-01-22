@@ -1,0 +1,384 @@
+
+
+.sidebar {
+  display: flex;
+  width: 0; 
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #fff; 
+  overflow-x: hidden; 
+  transition: width 0.3s ease; 
+  padding-top: 10px;
+  z-index: 2;
+  flex-direction: column;
+  justify-content: space-between;
+}
+  
+.sidebar a {
+  display: block; 
+  padding: 10px;
+  text-decoration: none;
+  color: black; 
+}
+
+.open-button {
+  cursor: pointer;
+  padding: 10px;
+  border: 1px solid black;
+  background: none;
+}
+
+body {
+  font-family: "Arial", sans-serif;  
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  height: 100vh;
+}
+
+.spotify{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  height: 100%;
+}
+
+.downRight{
+  position: absolute;
+  border:2px soild #000;
+  top:30%;
+  right:7%;
+  width:300px;
+  height:650px;
+ 
+}
+
+
+
+
+ 
+
+.google-login {
+  background-color: #db4437;
+  color: #fff;
+  margin: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.spotify-login {
+
+  
+  margin-top: 400px;
+  background-color: #1db954;
+  color: #fff;
+  margin: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 40px;
+  color: #2C3E50;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 19px;
+  margin-bottom: 20px;
+  }
+
+h3 {
+  font-size: 30px;
+  color: #2C3E50;
+  margin-bottom: 10px;
+  }
+
+.features {
+  margin-top: 25px;
+}
+
+.features ul {
+  list-style: none;
+  padding: 0;
+  }
+
+.features li {
+  font-size: 17px;
+  margin: 5px;
+}
+
+.logout-button {
+  background-color: #2C3E50; 
+  color: white; 
+  border: none;
+  border-radius: 5px; 
+  padding: 10px 20px; 
+  font-size: 16px; 
+  cursor: pointer;
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  margin: 20px auto; 
+  width: 80%; 
+  text-align: center;
+  margin-top: auto;
+  }
+
+.logout-button:hover {
+  background-color: #33495e; 
+  transform: scale(1.05); /
+}
+
+.home {
+  font-family: 'Arial', sans-serif;
+  padding: 20px;
+  text-align: center;
+
+}
+
+.welcome-section {
+  margin-bottom: 30px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.quote {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.quote-section h2 {
+  font-size: 30px;
+  color: #33495e;
+  margin-bottom: 10px;
+}
+
+.quote-section p {
+  font-size: 19px;
+  font-style: italic;
+  color: #666;
+}
+
+.todolist {
+  text-align: center;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9fb;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  max-width: 500px;
+}
+
+.todolist h1 {
+  font-family: "Arial", sans-serif;
+  font-size: 24px;
+  color: #2C3E50; 
+  margin-bottom: 20px;
+}
+
+.todolist input[type="text"] {
+  width: 70%;
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px #dcdde1;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: "Arial", sans-serif;
+}
+
+.todolist button {
+  padding: 10px 15px;
+  background-color: #3581b4;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: "Arial", sans-serif;
+}
+
+.todolist ul {
+  padding: 0;
+  margin-top: 20px;
+}
+
+.todolist li {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  color: #2c3e50;
+}
+
+.todolist li span {
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+.todolist li button {
+  margin-left: 5px;
+  padding: 7px;
+  font-size: 14px;
+  background-color: #2ecc71; 
+
+}
+
+.todolist li button:first-of-type { 
+  background-color: #e74c3c;
+}
+
+.page {
+  background-color: #131826;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.page .columns{
+  gap: 30px;
+  flex-direction: column;
+  
+}
+.page .headerBox{
+  background-color: #1b2537;
+  width: 23vw;
+  height: 13vh;
+  border-radius: 15px;
+  margin-bottom: 15px; 
+  color:white;
+  font-size: 30px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.page .box{
+  background-color: #1b2537;
+  width: 23vw;
+  height: 50vh;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  position: relative;
+  box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.page .box:hover{
+  transition: transform 0.2s ease-in-out;
+  transform: scale(1.05);
+}
+.page .circle1 {
+  border: 12px solid #5d61e5 ;
+  background-color: transparent;
+
+  width: 170px;
+  border-radius: 50%;
+  height: 170px;
+  align-items: center;
+  position: absolute;
+  justify-content: center;
+  display: flex;
+
+}
+.page .circle2{
+   background-color: transparent; 
+  border: 12px solid #82ca9d ;
+  width: 170px;
+  height: 170px;
+  align-items: center;
+  position: absolute;
+  justify-content: center;
+  display: flex;
+  border-radius: 50%;
+}
+.page .number{
+font-size: 24px;
+position: center;
+color: white;
+text-align: center;
+}
+.page .headerText{
+  color:white;
+  margin-bottom: 240px;
+  font-size: 30px;
+}
+.page .chartBox {
+  background-color: #1b2537;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  position: relative;
+  box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 23vw;
+  height: 50vh;
+}
+.page .chartBox:hover{
+  transition: transform 0.2s ease-in-out;
+  transform: scale(1.05); }
+  
+  .page .chartHeaderText{
+  color:white;
+    margin-top: 20px;
+    font-size: 30px; }
+  .page .smallBox{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 60%;
+  }
+/* @keyframes progress {
+  from {background: conic-gradient(transparent 0%, transparent 100%) ;}
+  to {background: conic-gradient(#5d61e5 0%, transparent 100%) ;}
+} */
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+
+
+
+  
+
+ 
+
+
+  
+  
+  
